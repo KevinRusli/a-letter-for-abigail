@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Letter</title>
+    </head>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+            background-color: #0b1522;
+        }
+        .page-container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+        section {
+            height: 100vh;
+        }
+        .first-page {
+            display:flex;
+            flex-direction: column;
+            gap:10vh;
+        }
+        .middle-section {
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            gap:10vh;
+        }
+        .top-section {
+            display:flex;
+            justify-content: center;
+            align-items: top;
+        }
+        .title1 {
+            color: white;
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            width: max-content;
+            border-right:5px solid;
+            width:100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+            typing 2s,
+            cursor .4s step-end infinite alternate;
+        }
+        @keyframes cursor {
+            50% { border-color: transparent }
+        }
+        @keyframes typing {
+            from { width: 0 }
+        }
+        .left-section {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            background-color: wheat;
+            width: 43vh;
+            height:39vh;
+            border-width: 10px;
+            border-radius: 20px;
+            border-style: dotted;
+        }
+        .img {
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+        }
+        .right-section {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width:50vh;
+            height:8vh;
+            background-color: wheat;
+            border-radius: 5px;
+        }
+        .text1 {
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:white
+        }
+        .bottom-section {
+            display:flex;
+            justify-content:center;
+            align-items: center;  
+        }
+        .container1 {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            background-color: wheat;
+            width: 43vh;
+            height:8vh;
+            border-radius: 5px;
+        }
+        .title2 {
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:white
+        }
+        .second-page {
+            background-color: wheat;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            background-color: white;
+            width: 50vh;
+            height: 60vh;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            margin-left: 10vh;
+            gap: 10vh;
+        }
+        .t-container {
+            background-color: white;
+            width: 70vh;
+            height: 20vh;
+            border-radius: 10px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .text2 {
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#0b1522;
+        }
+        .spotify {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 70vh;
+            height: 20vh;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .s-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#0b1522;
+            margin-left:25px;
+        }
+        .s-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .s-image:hover{
+            opacity: 0.7;
+        }
+        .third-page {
+            background-color:#c7ae90;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:10vh;
+        }
+        .third-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .paragraf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            width: 60vh;
+            height: 80vh;
+            border-radius: 5vh;
+        }
+        .back {
+            cursor: pointer;
+        }
+        .back:hover {
+            opacity:0.7;
+        }
+        .text3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#0b1522;
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .t-left-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .t2-left-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .t-right-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .t2-right-container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <body>
+        <div class="page-container">
+            <section class="first-page">
+                <div class="top-section">
+                    <div>
+                        <p class="title1">A letter to the girl I love the most ❤</p>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="left-section">
+                        <div class="img">
+                            <a>
+                                <img class="abii1" src="Aimage/abii1.jpg" width="200px"> 
+                            </a>
+                            <a>
+                                <img class="abii3" src="Aimage/abii3.jpg" width="200px">
+                            </a>
+                        </div>    
+                    </div>   
+                    <div class="right-section">
+                        <div class="text1">
+                            <p>
+                                Happy valentines dayy Abigail
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-section">
+                    <div class="container1">
+                        <div class="title2">
+                            <p>
+                                Scroll down to see more 😁
+                            </p>
+                        </div>
+                    </div>   
+                </div>    
+            </section>
+            <section class="second-page">
+                <div class="container2">
+                    <div class="left">
+                        <div class="up">
+                            <a>
+                                <img class="abi2" src="Aimage/abi2.jpg" width="200px"> 
+                            </a>
+                            <a>
+                                <img class="abii2" src="Aimage/abii2.jpg" width="200px">
+                            </a>
+                        </div>
+                        <div class="down">
+                            <a>
+                                <img class="abi4" src="Aimage/abi4.jpg" width="200px">
+                            </a>
+                            <a>
+                                <img class="abii4" src="Aimage/abii4.jpg" width="200px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="t-container">
+                            <p class="text2">
+                                I'm happy that i can spend my time with you.<br>
+                                I always feel safe and happy when I'm around <br>
+                                your arms, and I'm very grateful that I can <br>
+                                met someone like you. <br>
+                            </p>
+                        </div>    
+                        <div class="spotify">
+                            <p class="s-text">
+                                Here is some of my playlist that always reminds me of you ❤
+                            </p>
+                            <a href="https://open.spotify.com/playlist/4y9c97iMGxCv5FRSmso1gX?si=f215776dab67418d" target="_blank"> 
+                                <img class="s-image" src="Aimage/spotify.png" width="150px">
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="third-page">
+                <div class="t-left-container">
+                    <a>
+                        <img class="moon-img" src="Aimage/moon.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="plane-img" src="Aimage/paper airplane.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="a-img" src="Aimage/a.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="j-img" src="Aimage/j.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="m-img" src="Aimage/m.png" width="200px">
+                    </a>
+                </div>
+                <div class="t2-left-container">
+                    <a>
+                        <img class="b-img" src="Aimage/b.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="c-img" src="Aimage/c.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="g-img" src="Aimage/g.png" width="200px">
+                    </a>
+                </div>
+                <div class="paragraf">
+                    <p class="text3">
+                        Hi Abigail,<br>
+                        <br>Ya seperti yang u tau, I suka sama U bii dan seharusnya tuhh I pengen
+                        kasih tau U hari ini but things have change and its okey too. Ya mungkin
+                        I ngk seberapa dengan yang lain, tapi I seneng bisa spend time with you.
+                        Kan kemarin I udhh kasih tau everything ke U, but I wanna ask you something,
+                        do you feel the same like I do? do you love me? but its okey kalo u ngk suka 
+                        sama I sihh, I'll wait for your answer bii.<br>
+                        <br>
+                        Love,<br>
+                        Kevin
+                    </p>
+                    <a href="To-Abigail-From-Kevin.html">
+                        <img class="back" src="Aimage/back.png" width="100px">
+                    </a>
+                </div>
+                <div class="t-right-container">
+                    <a>
+                        <img class="flower-img" src="Aimage/flower.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="p-img" src="Aimage/p.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="f-img" src="Aimage/f.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="l-img" src="Aimage/l.png" width="200px">
+                    </a>
+                </div>
+                <div class="t2-right-container">
+                    <a>
+                        <img class="d-img" src="Aimage/d.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="e-img" src="Aimage/e.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="i-img" src="Aimage/i.png" width="200px">
+                    </a>
+                    <a>
+                        <img class="k-img" src="Aimage/k.png" width="200px">
+                    </a>
+                </div>
+            </section>
+        </div>    
+    </body>
+</html>
